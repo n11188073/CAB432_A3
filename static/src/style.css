@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+section {
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+input, select, button {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+}
+
+#images-list li {
+  margin-bottom: 5px;
+}
+
+/* Gallery container */
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Each image item */
+.image-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 160px; /* consistent width for each block */
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 8px;
+  background: #fafafa;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Thumbnails */
+.image-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Download button */
+.image-item button {
+  margin-top: 5px;
+  width: 100%;
+  padding: 5px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.image-item button:hover {
+  background: #357ABD;
+}
+
+/* Info text below image */
+.image-item p {
+  font-size: 12px;
+  text-align: center;
+  margin: 5px 0 0 0;
+}
